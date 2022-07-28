@@ -3,7 +3,7 @@ package com.authentification.backend.DAO;
 import com.authentification.backend.IDAO.ILoginDAO;
 import com.authentification.backend.entities.Login;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 public class LoginDAO implements ILoginDAO {
 

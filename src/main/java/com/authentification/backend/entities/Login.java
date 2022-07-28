@@ -1,6 +1,6 @@
 package com.authentification.backend.entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "login")
@@ -15,6 +15,12 @@ public class Login {
 
     @Column(name = "password_login", length = 250)
     private String password;
+
+    @Column(name = "first_name", length = 250)
+    private String firstName;
+
+    @Column(name = "family_name", length = 250)
+    private String familyName;
 
     public Integer getId() {
         return id;
@@ -40,4 +46,19 @@ public class Login {
         this.password = passwordLogin;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getFamilyName() {
+        return familyName;
+    }
+
+    public void setFamilyName(String familyName) {
+        this.familyName = familyName;
+    }
 }
